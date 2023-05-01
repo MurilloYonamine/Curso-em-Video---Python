@@ -16,3 +16,4 @@ for c in range(0, len(tupla)):
         print("o", end=' ')
     if "u" in tupla[c]:
         print("u", end=' ')
+

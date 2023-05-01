@@ -38,5 +38,5 @@ while True:
         qtd = qtd + 1
 
 print(f'Total de pessoas com mais de 18 anos: {maiorIdade}!')
-print(f'Ao todo temos {qtdHomens} homem cadastrados!')
+print(f'Ao todo temos {qtdHomens} homens cadastrados!')
 print(f'E temos {qtdMulheres} mulheres com menos de 20 anos!')

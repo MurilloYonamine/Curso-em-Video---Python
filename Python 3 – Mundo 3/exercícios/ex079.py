@@ -3,27 +3,21 @@
 # No final, serão exibidos todos os valores únicos digitados, em ordem crescente.
 from time import sleep
 
-c = 0
-maior = 0
-menor = 0
-aux = 0
 lista = []
 while True:
     n = int(input('Digite um valor: '))
-    # sleep(0.5)
-    lista.append(n)
-
-    for d in range(c + 1, len(lista)):
-        if lista[c] == lista[d]:
-            del lista[d]
-
-    print('Valor adicionado com sucesso...')
-    # sleep(0.5)
+    sleep(0.5)
+    if n not in lista:
+        lista.append(n)
+        print('Valor adicionado com sucesso...')
+    else:
+        print('Valor duplicado! Não será adicionado.')
+    sleep(0.5)
 
     escolha = input('Quer continuar? [S/N]: ').upper()
     while escolha not in 'SN':
         escolha = input('Tente novamente. Quer continuar? [S/N]: ').upper()
-    if escolha == 'N':
+    if escolha in 'Nn':
         break
 
 lista.sort()

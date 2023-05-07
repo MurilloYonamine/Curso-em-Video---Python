@@ -17,7 +17,7 @@ while True:
     dado.clear()
 
     escolha = input('Deseja Continuar? [S/N]: ').upper()
-    if escolha not in 'SN':
+    while escolha not in 'SN':
         escolha = input('Tente novamente. Deseja Continuar? [S/N]: ').upper()
     if escolha == 'N':
         break

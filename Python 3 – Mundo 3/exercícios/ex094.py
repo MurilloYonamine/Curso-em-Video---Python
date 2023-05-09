@@ -52,4 +52,3 @@ for c in range(0, len(lista)):
 
 for c in range(0, len(idadeAcima)):
     print(f'    Nome = {idadeAcima[c]["nome"]}; Sexo = {idadeAcima[c]["sexo"]}; Idade = {idadeAcima[c]["idade"]}')
-

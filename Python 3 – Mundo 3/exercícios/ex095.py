@@ -41,7 +41,7 @@ while escolha != 999:
         break
 
     print(f'LEVANTAMENTO DO JOGADOR {lista[escolha]["nome"].upper()}')
-    for c,d in range(0, len(lista[escolha]["gols"])):
-        print(f'No jogo {c} fez {lista[d]["gols"]}.')
+    for c in range(0, len(lista[escolha]['gols'])):
+        print(f'No jogo {c+1} fez {lista[escolha]["gols"][c]}.')
 
 print('VOLTE SEMPRE!')
